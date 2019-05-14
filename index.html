@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jaka Nike</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="copyright" content="" />
+	<meta name="author" content="" />
+	<meta name="rating" content="general" />
+	<meta name="expires" content="Never" />
+	<meta name="revisit-after" content="30 Days" />
+
+	<link rel="stylesheet" href="CSS\style.css" type="text/css" />
+
+</head>
+
+
+<body>
+	<section>
+	<center>
+
+
+	<div class="topnav">
+
+	<a class="active" href="index.html">Bezirjeva krivulja</a>
+
+	 <a  href="svg.html">SVG slika</a>
+
+	 <a href="vizitka.html">vizitka</a>
+
+	 	</div>
+	</center>
+
+
+
+	<div align="center">
+	  <h1>Bezier Curve</h1>
+
+	</div>
+
+
+<div align="center">
+	<canvas id="myCanvas" width="655" height="300"></canvas>
+	<script>
+
+var c = document.getElementById("myCanvas");
+	var ctx = c.getContext("2d");
+	ctx.beginPath();
+	ctx.moveTo(110, 44);
+	ctx.bezierCurveTo(5, 270, 220, 175, 630, 50);
+	ctx.bezierCurveTo(450, 135, -216, 462, 104, 50);
+	ctx.closePath();
+	ctx.fillStyle = "#0000ff";
+	ctx.fill();
+	ctx.stroke();
+
+</script>
+</div>
+
+
+
+<script>
+
+
+function myFunction2() {
+		document.getElementById('slikaa').src = 'Slike/nike1.jpg'
+
+		document.body.style.background = "white";
+		 document.body.style.color = "black";
+
+
+}
+
+
+function myFunction() {
+		document.getElementById('slikaa').src = 'Slike/nikeVamos.jpg'
+
+		document.body.style.background = "black";
+ 		document.body.style.color = "white";
+
+
+
+}
+</script>
+
+
+</section>
+
+<ul>
+	<li>
+		  <span id="light"onclick="myFunction2()">Light</span>
+			<span id="dark" onclick="myFunction()">Dark</span>
+	</li>
+</ul>
+
+
+	<div id="slika1" align="center">
+
+		<h2>Originalna Slika</h2>
+
+		<img id="slikaa" src="Slike/nike1.jpg">
+
+	</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
